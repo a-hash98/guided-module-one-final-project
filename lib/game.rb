@@ -1,17 +1,9 @@
-#require 'rest_client'
-#require 'JSON'
+require 'rest-client'
+require 'JSON'
 
 class Game < ActiveRecord::Base
   has_many :gamesplays
   has_many :users, through: :gameplays
-
-  def select_random_word(name:,genre:)
-    genres['genre_name'].sample.to_s
-  end
-
-  def display_random_word
-    puts select_random_word
-  end
 
   def self.hide_word_letters(word)
     transform_word = word.split('')

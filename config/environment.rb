@@ -1,6 +1,5 @@
 require 'bundler'
-require 'rest_client'
-require 'rest_client'
+require 'rest-client'
 require 'nokogiri'
 require 'open-uri'
 require 'JSON'

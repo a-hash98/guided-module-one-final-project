@@ -20,8 +20,6 @@ class CLI
     return true if User.find_by(username: username) == nil
   end
 
-
-
   def create_account_or_sign_in
     input = create_account_option
     if input == 'A'

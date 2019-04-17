@@ -1,4 +1,4 @@
-require 'rest_client'
+require 'rest-client'
 require 'nokogiri'
 require 'open-uri'
 require 'JSON'
@@ -9,9 +9,7 @@ class FormulateHangman
     @processed_countries = []
     @mineral_rock_words = []
     @dessert_words = []
-
-
-  end
+ end
 
   #create hangman game variations for the following genres: countries, British desserts, rock and minerals
 
